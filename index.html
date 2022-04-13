@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="flexContainer">
+        <div class="tools"></div>
+        <div class="draw">
+            <input type="number" id="tableSize">
+            <button onclick="createGrid()">ok</button>
+            <div id="container">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const container = document.querySelector("#container")
+    var tableSize = 0
+    let gridElement = document.querySelector(".gridElement")
+
+    function createGrid(){
+        tableSize = document.querySelector("#tableSize").value
+   
+        for(i=0; i<(tableSize * tableSize); i++){
+            console.log(tableSize)
+            let gridElement = document.createElement("div");
+            gridElement.classList.add("gridElement")
+            //gridElement.addEventListener("click", /*function to change color*/)
+            container.appendChild(gridElement)
+
+            let gridElementWidth= (650/tableSize)+"px"
+            gridElement.style.width = gridElementWidth
+        }
+    
+    }
+    
+    
+
+
+    /*
+    function createGird (){
+        tableSize = document.querySelector("#tableSize").value
+        
+        for(i=0; i<(tableSize); i++){
+            let newRow = document.createElement("tr");
+            container.appendChild(newRow).className = "row" + i;
+
+            let rowN = document.getElementsByClassName("row" + i)
+            
+            for(c=0; c<(tableSize);c++){
+                let newCell = document.createElement("td")
+                newRow.appendChild(newCell)
+            }
+        }
+    }
+    */
+    
+</script>
