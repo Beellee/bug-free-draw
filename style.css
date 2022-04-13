@@ -1,0 +1,56 @@
+.flexContainer{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tools{
+    width: 50vh;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.draw{
+    height: 100vh;
+    width: 130vh;
+    background-color: rgb(43, 64, 226);
+}
+/*related to the js*/
+
+#container{
+    display: grid;
+    width: 650px;
+    height: 650px;
+    background-color: rgb(187, 137, 234);
+}
+
+.gridElement{
+    user-select: none;
+}
+
+/**
+.gridContainer{
+    position: relative;
+display: flex;
+flex-direction: column;
+
+display: grid;
+width: 65vh;
+height: 65vh;
+table-layout: fixed;
+gap:0;
+}
+td{
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(156, 156, 156);
+    background-color: aliceblue;
+}
+*/
